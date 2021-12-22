@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+
+        <section class="glass">
+            <div class="dashboard">
+
+                <div class="links">
+                    <div class="link" id="logo">
+                        <h1>Calculator.io</h1>
+                    </div>
+                    <div class="link" id="link-1">
+                        <i class="far fa-money-bill-alt" style="font-size: 30px; margin: 10px;"></i>
+                        <h2>Simple Interest Calculator</h2>
+                    </div>
+                    <div class="link" id="link-2">
+                        <i class="fas fa-coins" style="font-size: 30px; margin: 10px;"></i>
+                        <h2>Compound Interest Calculator</h2>
+                    </div>
+                    <div class="link" id="link-3">
+                        <i class="fas fa-landmark" style="font-size: 30px; margin: 10px;"></i>
+                        <h2>GST Tax Calculator</h2>
+                    </div>
+                    <div class="link" id="link-4">
+                        <i class="fas fa-percentage" style="font-size: 30px; margin: 3px;"></i>
+                        <h2>Discount Calculator</h2>
+                    </div>
+                    <footer>&copy Swarup Deepak Vishwas</footer>
+                </div>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <h1 class="title">Calculator</h1>
+                    <div class="calc">
+                        <div class="display"></div>
+                        <div class="buttons">
+                            <div class="button">C</div>
+                            <div class="button">/</div>
+                            <div class="button">*</div>
+                            <div class="button">&larr;</div>
+                            <div class="button">7</div>
+                            <div class="button">8</div>
+                            <div class="button">9</div>
+                            <div class="button">-</div>
+                            <div class="button">4</div>
+                            <div class="button">5</div>
+                            <div class="button">6</div>
+                            <div class="button">+</div>
+                            <div class="button">1</div>
+                            <div class="button">2</div>
+                            <div class="button">3</div>
+                            <div class="button">.</div>
+                            <div class="button">(</div>
+                            <div class="button">0</div>
+                            <div class="button">)</div>
+                            <div id="equal" class="button">=</div>
+                        </div>
+                    </div>
+                    <div class="simple">
+                       <div class="solve">
+                            <input type="number" name="princ" id="princ" placeholder="Principal Ampunt">
+                            <input type="number" name="si" id="si" placeholder="Interest Rate">                            
+                            <input type="number" name="year" id="year" placeholder="Year">                            
+                            <button id="siCalc">Submit</button>
+                        </div>
+                        <div class="si-result">Result Here</div>
+                    </div>
+                    <div class="compound">
+                        <div class="solve">
+                            <input type="number" name="princ" id="Comprinc" placeholder="Principal Ampunt">
+                            <input type="number" name="si" id="ci" placeholder="Interest Rate">                            
+                            <input type="number" name="year" id="Coyear" placeholder="Year">  
+                            <input type="number" name="times" id="Cotimes" placeholder="Compound Times">                            
+                            <button id="ciCalc">Submit</button>
+                        </div>
+                        <div class="ci-result">Result Here</div>
+                    </div>
+                    <div class="discount">
+                        <div class="solve">
+                            <input type="number" name="cp" id="cp" placeholder="Cost Price">
+                            <input type="number" name="discount" id="disRate" placeholder="Discount Rate">                            
+                            <button id="disCalc">Submit</button>
+                        </div>
+                        <div class="dis-result">Result Here</div>
+                    </div>
+                    <div class="gst">
+                        <div class="solve">
+                            <input type="number" name="gst" id="amt" placeholder="Your Amount">
+                            <select name="per" id="per">
+                                <option value="5">5%</option>
+                                <option value="12">12%</option>
+                                <option value="18">18%</option>
+                            </select>
+                            <button id="gstCalc">Submit</button>
+                        </div>
+                        <div class="gst-result">Result Here</div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

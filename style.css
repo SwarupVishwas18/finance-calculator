@@ -1,0 +1,236 @@
+body {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    font-family: 'Montserrat',
+        sans-serif;
+
+}
+
+button {
+    font-family: 'Montserrat',
+        sans-serif;
+    font-weight: bold;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass {
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(297deg, rgba(255, 255, 255, .7) 14%, rgba(255, 255, 255, .3) 100%);
+    border-radius: 1rem;
+    min-height: 80vh;
+    width: 60%;
+    z-index: 2;
+    backdrop-filter: blur(1rem);
+    display: flex;
+}
+
+.circle1,
+.circle2 {
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(297deg, rgba(255, 255, 255, .7) 14%, rgba(255, 255, 255, .3) 100%);
+    height: 25rem;
+    width: 25rem;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.circle1 {
+    top: 1%;
+    left: 10%;
+}
+
+.circle2 {
+    bottom: 3%;
+    right: 15%;
+}
+
+.dashboard {
+    flex: 1;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: 'Nunito',
+        sans-serif;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3));
+    border-radius: 1rem;
+}
+
+.content {
+    flex: 2;
+}
+
+.container {
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+}
+
+.buttons {
+    display: grid;
+    font-size: xx-large;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3));
+}
+
+.display {
+    height: 70px;
+    line-height: 70px;
+    font-size: xx-large;
+    text-align: center;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.7));
+    margin: 1rem;
+}
+
+.button {
+    padding: 2rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover,
+#gstCalc:hover,
+#amt:hover,
+select:hover,
+#cp:hover,
+#disRate:hover,
+#disCalc:hover,
+#princ:hover,
+#si:hover,
+#siCalc:hover,
+#year:hover,
+#Comprinc:hover,
+#ci:hover,
+#ciCalc:hover,
+#Coyear:hover,
+#Cotimes:hover {
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.7));
+}
+
+.button:active,
+#gstCalc:active,
+#amt:active,
+select:active,
+#cp:active,
+#disRate:active,
+#disCalc:active,
+#princ:active,
+#si:active,
+#siCalc:active,
+#year:active,
+#Comprinc:active,
+#ci:active,
+#ciCalc:active,
+#Coyear:active,
+#Cotimes:active {
+    background: linear-gradient(to right bottom,
+            rgba(82, 126, 209, 0.5),
+            rgba(255, 255, 255, 0.7));
+}
+
+#equal {
+    background-color: cornflowerblue;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: xx-large;
+}
+
+.simple,
+.compound,
+.discount,
+.gst {
+    display: none;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.gst,
+.discount,
+.simple,
+.compound {
+    display: block;
+    text-align: center;
+}
+
+#amt,
+select,
+#gstCalc,
+#cp,
+#disRate,
+#disCalc,
+#princ,
+#si,
+#siCalc,
+#year,
+#Comprinc,
+#ci,
+#ciCalc,
+#Coyear,
+#Cotimes {
+    padding: .9rem;
+    margin: 2rem;
+    font-size: large;
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3));
+    border: none;
+}
+
+.gst-result,
+.dis-result,
+.si-result,
+.ci-result {
+    padding: 5rem 0rem;
+    font-size: xx-large;
+}
+
+.ci-result {
+    padding: 1rem 0rem;
+}
+
+.title {
+    text-align: center;
+}
