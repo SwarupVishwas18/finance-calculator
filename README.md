@@ -8,3 +8,4 @@ This is finance calculator with the functionalities like
 
 
 Click on "Calculator.io" for going back to simple calculator
+Check only on Desktop as mobile version is not much cool
